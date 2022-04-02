@@ -1,0 +1,21 @@
+<app-menu></app-menu>
+<table class="table table-sm">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Description</th>
+            <th>Shipped</th>
+            <th>Total</th>
+            <th>CustomerId</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let o of orders">
+            <td>{{ o.id }}</td>
+            <td>{{ o.description }}</td>
+            <td>{{ (o.shipped ? "Yes" : "No") }}</td>
+            <td>{{ o.total | currency }}</td>
+            <td>{{ o.customerId }}</td>
+        </tr>
+    </tbody>
+</table>
