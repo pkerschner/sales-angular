@@ -15,6 +15,7 @@ import { OrderlineCreateComponent } from './sales/orderline/orderline-create/ord
 import { OrderlineDetailComponent } from './sales/orderline/orderline-detail/orderline-detail.component';
 import { OrderlineEditComponent } from './sales/orderline/orderline-edit/orderline-edit.component';
 import { OrderlineListComponent } from './sales/orderline/orderline-list/orderline-list.component';
+import { EmployeeLoginComponent } from './sales/employee/employee-login/employee-login.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "/home", pathMatch: "full" },
@@ -35,6 +36,8 @@ const routes: Routes = [
   { path: "orderline/create", component: OrderlineCreateComponent },
   { path: "orderline/detail/:id", component: OrderlineDetailComponent },
   { path: "orderline/edit/:id", component: OrderlineEditComponent },
+
+  { path: "login", component: EmployeeLoginComponent },
 
   { path: "**", component: E404Component }
 ];

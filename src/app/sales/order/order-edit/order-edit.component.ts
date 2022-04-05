@@ -45,7 +45,7 @@ export class OrderEditComponent implements OnInit {
     let id = +this.route.snapshot.params["id"];
     this.ordsvc.get(id).subscribe({
       next: (res) => {
-        console.debug("Customers:", res);
+        console.debug("Orders:", res);
         this.order = res;
       },
       error: (err) => {

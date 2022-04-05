@@ -21,6 +21,9 @@ import { OrderlineListComponent } from './sales/orderline/orderline-list/orderli
 import { OrderlineDetailComponent } from './sales/orderline/orderline-detail/orderline-detail.component';
 import { OrderlineCreateComponent } from './sales/orderline/orderline-create/orderline-create.component';
 import { OrderlineEditComponent } from './sales/orderline/orderline-edit/orderline-edit.component';
+import { BoolDisplayPipe } from './bool-display.pipe';
+import { CustomerSearchPipe } from './sales/customer/customer-search.pipe';
+import { EmployeeLoginComponent } from './sales/employee/employee-login/employee-login.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +42,10 @@ import { OrderlineEditComponent } from './sales/orderline/orderline-edit/orderli
     OrderlineListComponent,
     OrderlineDetailComponent,
     OrderlineCreateComponent,
-    OrderlineEditComponent
+    OrderlineEditComponent,
+    BoolDisplayPipe,
+    CustomerSearchPipe,
+    EmployeeLoginComponent
   ],
   imports: [
     BrowserModule, FormsModule, HttpClientModule,
