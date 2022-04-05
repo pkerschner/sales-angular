@@ -11,6 +11,10 @@ import { OrderCreateComponent } from './sales/order/order-create/order-create.co
 import { OrderDetailComponent } from './sales/order/order-detail/order-detail.component';
 import { OrderEditComponent } from './sales/order/order-edit/order-edit.component';
 import { OrderListComponent } from './sales/order/order-list/order-list.component';
+import { OrderlineCreateComponent } from './sales/orderline/orderline-create/orderline-create.component';
+import { OrderlineDetailComponent } from './sales/orderline/orderline-detail/orderline-detail.component';
+import { OrderlineEditComponent } from './sales/orderline/orderline-edit/orderline-edit.component';
+import { OrderlineListComponent } from './sales/orderline/orderline-list/orderline-list.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "/home", pathMatch: "full" },
@@ -26,6 +30,11 @@ const routes: Routes = [
   { path: "order/create", component: OrderCreateComponent },
   { path: "order/detail/:id", component: OrderDetailComponent },
   { path: "order/edit/:id", component: OrderEditComponent },
+
+  { path: "orderline/list", component: OrderlineListComponent },
+  { path: "orderline/create", component: OrderlineCreateComponent },
+  { path: "orderline/detail/:id", component: OrderlineDetailComponent },
+  { path: "orderline/edit/:id", component: OrderlineEditComponent },
 
   { path: "**", component: E404Component }
 ];
